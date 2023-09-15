@@ -35,10 +35,10 @@ public class Anfibio extends Animal {
 		salamandras++;
 		return salamandra;
 	}
-	public ArrayList<Anfibio> getListado(){
+	public static ArrayList<Anfibio> getListado(){
 		return listado;
 	}
-	public void setListado(ArrayList<Anfibio> listado) {
+	public static void setListado(ArrayList<Anfibio> listado) {
 		Anfibio.listado = listado;
 	}
 	public String getColorPiel() {
@@ -47,7 +47,7 @@ public class Anfibio extends Animal {
 	public void setColorPiel(String colorPiel) {
 		this.colorPiel = colorPiel;
 	}
-	public boolean getVenenoso() {
+	public boolean isVenenoso() {
 		return venenoso;
 	}
 	public void setVenenoso(boolean venenoso) {

@@ -34,10 +34,10 @@ public class Pez extends Animal {
 		bacalaos++;
 		return bacalao;
 	}
-	public ArrayList<Pez> getListado(){
+	public static ArrayList<Pez> getListado(){
 		return listado;
 	}
-	public void setListado(ArrayList<Pez> listado) {
+	public static void setListado(ArrayList<Pez> listado) {
 		Pez.listado = listado;
 	}
 	public String getColorEscamas() {

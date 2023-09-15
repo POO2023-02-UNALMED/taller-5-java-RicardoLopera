@@ -35,22 +35,22 @@ public class Mamifero extends Animal {
 		leones++;
 		return leon;
 	}
-	public ArrayList<Mamifero> getListado(){
-		return listado;
-	}
-	public void setListado(ArrayList<Mamifero> listado) {
-		Mamifero.listado = listado;
-	}
-	public int getPatas() {
-		return patas;
-	}
-	public void setColorPiel(int patas) {
-		this.patas = patas;
-	}
-	public boolean getPelaje() {
+	public boolean isPelaje() {
 		return pelaje;
 	}
 	public void setPelaje(boolean pelaje) {
 		this.pelaje = pelaje;
+	}
+	public int getPatas() {
+		return patas;
+	}
+	public void setPatas(int patas) {
+		this.patas = patas;
+	}
+	public static ArrayList<Mamifero> getListado() {
+		return listado;
+	}
+	public static void setListado(ArrayList<Mamifero> listado) {
+		Mamifero.listado = listado;
 	}
 }
