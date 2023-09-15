@@ -24,13 +24,13 @@ public class Ave extends Animal {
 	public String movimiento() {
 		return "volar";
 	}
-	public static Ave crearHalcon(String nombre, int edad, String habitad, String genero) {
-		Ave halcon = new Ave();
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
+		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		halcones++;
 		return halcon;
 	}
-	public static Ave crearAguila(String nombre, int edad, String habitad, String genero) {
-		Ave aguila = new Ave();
+	public static Ave crearAguila(String nombre, int edad, String genero) {
+		Ave aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		aguilas++;
 		return aguila;
 	}
