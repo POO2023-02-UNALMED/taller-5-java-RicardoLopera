@@ -15,11 +15,9 @@ public class Animal {
 		this.edad = edad;
 		this.habitad = habitad;
 		this.genero = genero;
-		totalAnimales++;
+		this.totalAnimales++;
 	}
-	public Animal() {
-		totalAnimales++;
-	}
+	public Animal() {}
 	
 	public String movimiento() {
 		return "desplazarse";
