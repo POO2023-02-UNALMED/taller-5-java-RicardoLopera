@@ -6,14 +6,14 @@ public class Animal {
 	private static int totalAnimales;
 	private String nombre;
 	private int edad;
-	private String habitad;
+	private String habitat;
 	private String genero;
 	private Zona zona;
 	
-	public Animal(String nombre, int edad, String habitad, String genero) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.habitad = habitad;
+		this.habitat = habitat;
 		this.genero = genero;
 		totalAnimales++;
 	}
@@ -29,10 +29,13 @@ public class Animal {
 		return cadena;
 	}
 	public String toString() {
-		String cadena = "Mi nombre es " +this.nombre + "tengo una edad de " + this.edad + ", habito en " + this.habitad + "y mi genero es"
-				+this.genero;
+		String cadena = "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + 
+				", habito en " + this.habitat +
+				" y mi genero es " + this.genero;
 		if (this.zona != null) {
-			String cadenaCompleta = cadena + ", la zona en la que me ubico es" + this.zona.getNombre() + ", en el" +this.zona.getZoo().getNombre();
+			String cadenaCompleta = cadena + 
+					", la zona en la que me ubico es " + this.zona.getNombre() +
+					", en el zoo" + this.zona.getZoo().getNombre();
 			return cadenaCompleta;
 		}
 		return cadena;
@@ -63,10 +66,10 @@ public class Animal {
 		this.genero = genero;
 	}
 	public String getHabitat() {
-		return habitad;
+		return habitat;
 	}
 	public void setHabitat(String habitad) {
-		this.habitad = habitad;
+		this.habitat = habitad;
 	}
 	public Zona getZona() {
 		return zona;
