@@ -62,10 +62,10 @@ public class Animal {
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	public String getHabitad() {
+	public String getHabitat() {
 		return habitad;
 	}
-	public void setHabitad(String habitad) {
+	public void setHabitat(String habitad) {
 		this.habitad = habitad;
 	}
 	public Zona getZona() {
